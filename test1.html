@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav {
+            background: #34495e;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table th, table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background: #3498db;
+            color: white;
+        }
+        form {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0 1rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .list-item {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border-left: 4px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            <h1>Welcome to My Website</h1>
+            <p>A comprehensive HTML demonstration page</p>
+        </div>
+    </header>
+
+    <nav>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#gallery">Gallery</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the main content area of the website. It contains multiple sections demonstrating various HTML elements and CSS styling.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Mission</h3>
+                    <p>Our mission is to provide quality information and services to our community.</p>
+                </div>
+                <div class="card">
+                    <h3>Vision</h3>
+                    <p>We envision a future where technology connects and empowers everyone.</p>
+                </div>
+                <div class="card">
+                    <h3>Values</h3>
+                    <p>We believe in integrity, innovation, and customer satisfaction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li class="list-item">Web Development</li>
+                <li class="list-item">Mobile Applications</li>
+                <li class="list-item">UI/UX Design</li>
+                <li class="list-item">Consulting Services</li>
+                <li class="list-item">Technical Support</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Products Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Features</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td>$99</td>
+                        <td>Feature 1, Feature 2</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>$149</td>
+                        <td>Feature 1, Feature 2, Feature 3</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td>$199</td>
+                        <td>Feature 1, Feature 2, Feature 3, Feature 4</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 200px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <p>Image 1</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <p>Image 2</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 200px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <p>Image 3</p>
+                </div>
+                <div style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 200px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <p>Image 4</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is your company?</summary>
+                <p>We are a technology company specializing in web and mobile development.</p>
+            </details>
+            <details>
+                <summary>How can I contact support?</summary>
+                <p>You can contact us through the contact form or email support@company.com</p>
+            </details>
+            <details>
+                <summary>What payment methods do you accept?</summary>
+                <p>We accept all major credit cards, PayPal, and bank transfers.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Code Example</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Media Elements</h2>
+            <p>Video Placeholder:</p>
+            <video width="300" height="200" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Audio Placeholder:</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>Contact: info@mywebsite.com | Phone: (123) 456-7890</p>
+        <p>
+            <a href="#" style="color: #3498db; text-decoration: none;">Privacy Policy</a> | 
+            <a href="#" style="color: #3498db; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
